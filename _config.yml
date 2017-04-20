@@ -10,8 +10,8 @@ title: Ramblin' Reck Club
 email: technology@reckclub.org
 description: > # this means to ignore newlines until "baseurl:"
   The history of the Ramblin' Reck
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://akeaswaran.github.io/reck" # the base hostname & protocol for your site
+baseurl: "/reck" # the subpath of your site, e.g. /blog
+url: "https://akeaswaran.me" # the base hostname & protocol for your site
 
 
 # Build settings

@@ -12,12 +12,12 @@
     </div>
     <div id="navbar" class="navbar-collapse collapse">
         <ul class="nav nav-justified">
-            <li {% if page.url == "/" %}class="active"{% endif %}><a href="/index.html">Home</a></li>
+            <li {% if page.url == "/" %}class="active"{% endif %}><a href="{{ "/" | prepend: site.baseurl }}">Home</a></li>
             {% assign sorted_pages = site.pages | sort:"order" %}
             {% for my_page in sorted_pages %}
             {% if my_page.title %}
             {% if my_page.title != "Reck History" %}
-            <li class="{% if page.url == my_page.permalink %}active{% endif %}"><a href="{{ my_page.permalink }}">{{ my_page.title }}</a></li>
+            <li class="{% if page.url == my_page.permalink %}active{% endif %}"><a href="{{ my_page.permalink | prepend: site.baseurl }}">{{ my_page.title }}</a></li>
             {% endif %}
             {% endif %}
             {% endfor %}
