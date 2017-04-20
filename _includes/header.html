@@ -1,0 +1,26 @@
+<div class="masthead">
+    <div class="container-fluid">
+        <div class="heading">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <h1>Ramblin' Reck Club <small>History of the Reck</small></h1>
+        </div>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+        <ul class="nav nav-justified">
+            <li {% if page.url == "/" %}class="active"{% endif %}><a href="/index.html">Home</a></li>
+            {% assign sorted_pages = site.pages | sort:"order" %}
+            {% for my_page in sorted_pages %}
+            {% if my_page.title %}
+            {% if my_page.title != "Reck History" %}
+            <li class="{% if page.url == my_page.permalink %}active{% endif %}"><a href="{{ my_page.permalink }}">{{ my_page.title }}</a></li>
+            {% endif %}
+            {% endif %}
+            {% endfor %}
+        </ul>
+    </div>
+</div>

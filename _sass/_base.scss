@@ -1,0 +1,76 @@
+body {
+    padding-bottom: 20px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: 'Bitter', serif;
+}
+
+.heading {
+    margin-bottom: 25px; /* 50px when iphone */
+    position: relative;
+    top: 25%;
+    transform: translateY(25%);
+}
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    .heading {
+        margin-bottom: 50px;
+    }
+}
+
+.active a, .nav li a:hover {
+    color: white !important;
+    background-color: #C4AC71 !important;
+}
+
+.nav li a {
+    color: #C4AC71;
+    background-color: white;
+}
+
+.jumbotron {
+    color: white;
+    background: #C4AC71;
+}
+
+.btn-primary {
+    background: #00254c;
+    border-color: #00254c;
+}
+
+.btn-primary:hover {
+    background: #335170;
+}
+
+a {
+    color: #C4AC71;
+}
+
+a:hover {
+    color: #FFDA8A;
+}
+
+.text-muted {
+    color: #808080;
+}
+
+.small {
+    color: #808080;
+}
+
+.icon-bar {
+    background: #C4AC71;
+}
+
+#navbar {
+    margin: 0 auto !important;
+}
+
+#navbar {
+    padding: 0 !important;
+    margin: 0 auto !important;
+    text-align:left !important;
+}
