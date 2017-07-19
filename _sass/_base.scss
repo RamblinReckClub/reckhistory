@@ -18,6 +18,14 @@ h1,h2,h3,h4 {
     margin-bottom: 20px;
 }
 
+.img-reck {
+    margin: 0 auto;
+    vertical-align: middle;
+    text-align: center;
+    padding-top: 13px;
+    width: 85%
+}
+
 @media only screen and (max-width: 768px) {
     /* For mobile phones: */
     .heading {
