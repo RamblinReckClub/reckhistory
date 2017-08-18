@@ -1,0 +1,61 @@
+---
+layout: default
+---
+<div class="jumbotron">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-9">
+                <h1 style="font-size: 75px;">{{ page.title }}</h1>
+                <p>{{ page.summary }}</p>
+            </div>
+            <div class="col-lg-3">
+                <h3>Drivers</h3>
+                {% for driver in page.drivers %}
+                <h5>{{ driver }}</h5>
+                {% endfor %}
+            </div>
+            <div style="clear: both;"></div>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="page-header text-center">
+        <h1 id="timeline">Important Events</h1>
+    </div>
+    <div class="container">
+        <ul class="timeline">
+            {% for event in page.events %}
+                {% assign loopindex = forloop.index | modulo: 2 %}
+                {% if loopindex == 1 %}
+                <li>
+                  <div class="timeline-badge"><img class="img-responsive img-reck" src="{{ "/images/white-reck.png" | prepend: site.baseurl }}"></div>
+                  <div class="timeline-panel">
+                    <div class="timeline-heading">
+                      <h4 class="timeline-title">{{ event.title }}</h4>
+                      <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> {{ event.location }}</small></p>
+                    </div>
+                    <div class="timeline-body">
+                      <p>{{ event.description }}</p>
+                    </div>
+                  </div>
+                </li>
+                {% else %}
+                <li class="timeline-inverted">
+                  <div class="timeline-badge reck-gold"><img class="img-responsive img-reck" src="{{ "/images/white-reck.png" | prepend: site.baseurl }}"></div>
+                  <div class="timeline-panel">
+                    <div class="timeline-heading">
+                      <h4 class="timeline-title">{{ event.title }}</h4>
+                      <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> {{ event.location }}</small></p>
+                    </div>
+                    <div class="timeline-body">
+                      <p>{{ event.description }}</p>
+                    </div>
+                  </div>
+                </li>
+                {% endif %}
+            {% endfor %}
+        </ul>
+    </div>
+
+</div>
