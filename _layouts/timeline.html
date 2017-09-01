@@ -40,6 +40,9 @@ layout: default
                     </div>
                     <div class="timeline-body">
                       <p>{{ event.description }}</p>
+                      {% if event.source %}
+                      <a class="btn-link" href="{{ event.source }}">Learn More »</a>
+                      {% endif %}
                     </div>
                   </div>
                 </li>
@@ -48,11 +51,17 @@ layout: default
                   <div class="timeline-badge reck-gold"><img class="img-responsive img-reck" src="{{ "/images/misc/white-reck.png" | prepend: site.baseurl }}"></div>
                   <div class="timeline-panel">
                     <div class="timeline-heading">
+                        {% if event.image %}
+                        <img class="img-responsive" src="{{ event.image | prepend: site.baseurl }}" />
+                        {% endif %}
                       <h4 class="timeline-title">{{ event.title }}</h4>
                       <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> {{ event.location }}</small></p>
                     </div>
                     <div class="timeline-body">
                       <p>{{ event.description }}</p>
+                      {% if event.source %}
+                      <a class="btn-link" href="{{ event.source }}">Learn More »</a>
+                      {% endif %}
                     </div>
                   </div>
                 </li>
