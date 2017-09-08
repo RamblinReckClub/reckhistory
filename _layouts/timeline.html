@@ -40,7 +40,21 @@ layout: default
                   <div class="timeline-panel">
                     <div class="timeline-heading">
                       {% if event.image %}
-                      <img class="img-responsive" src="{{ event.image | prepend: site.baseurl }}" />
+                        {% if event.image contains "http" %}
+                        <img class="img-responsive" src="{{ event.image }}" />
+                        {% else %}
+                        <img class="img-responsive" src="{{ event.image | prepend: site.baseurl }}" />
+                        {% endif %}
+                      {% elsif event.video %}
+                          {% if event.video contains "facebook" %}
+                          <div class="embed-responsive embed-responsive-16by9" style="margin-bottom: 10px;">
+                          {{ event.video }}
+                          </div>
+                          {% else %}
+                          <div class="embed-responsive embed-responsive-16by9" style="margin-bottom: 10px;">
+                              <iframe class="embed-responsive-item" src="{{ event.video | remove: "https://youtu.be/" | remove: "https://youtube.com/watch?v=" | remove: "https://www.youtube.com/watch?v=" | prepend: "https://www.youtube.com/embed/" }}"></iframe>
+                          </div>
+                          {% endif %}
                       {% endif %}
                       <h4 class="timeline-title">{{ event.title }}</h4>
                       <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> {{ event.location }}</small></p>
@@ -48,7 +62,7 @@ layout: default
                     <div class="timeline-body">
                       <p>{{ event.description }}</p>
                       {% if event.source %}
-                      <a class="btn-link" href="{{ event.source }}">Learn More »</a>
+                      <a href="{{ event.source }}">Learn More »</a>
                       {% endif %}
                     </div>
                   </div>
@@ -59,7 +73,21 @@ layout: default
                   <div class="timeline-panel">
                     <div class="timeline-heading">
                         {% if event.image %}
-                        <img class="img-responsive" src="{{ event.image | prepend: site.baseurl }}" />
+                            {% if event.image contains "http" %}
+                            <img class="img-responsive" src="{{ event.image }}" />
+                            {% else %}
+                            <img class="img-responsive" src="{{ event.image | prepend: site.baseurl }}" />
+                            {% endif %}
+                        {% elsif event.video %}
+                            {% if event.video contains "facebook" %}
+                            <div class="embed-responsive embed-responsive-16by9" style="margin-bottom: 10px;">
+                            {{ event.video }}
+                            </div>
+                            {% else %}
+                            <div class="embed-responsive embed-responsive-16by9" style="margin-bottom: 10px;">
+                                <iframe class="embed-responsive-item" src="{{ event.video | remove: "https://youtu.be/" | remove: "https://youtube.com/watch?v=" | remove: "https://www.youtube.com/watch?v=" | prepend: "https://www.youtube.com/embed/" }}"></iframe>
+                            </div>
+                            {% endif %}
                         {% endif %}
                       <h4 class="timeline-title">{{ event.title }}</h4>
                       <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> {{ event.location }}</small></p>
@@ -67,7 +95,7 @@ layout: default
                     <div class="timeline-body">
                       <p>{{ event.description }}</p>
                       {% if event.source %}
-                      <a class="btn-link" href="{{ event.source }}">Learn More »</a>
+                      <a href="{{ event.source }}">Learn More »</a>
                       {% endif %}
                     </div>
                   </div>
