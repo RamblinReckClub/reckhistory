@@ -10,7 +10,7 @@ The name of Georgia Tech's automobile mascot is a point of fierce contention. Th
 
 The earliest official reference to the mascot in the Georgia Tech archives is [the 1962 Blueprint](https://smartech.gatech.edu/handle/1853/31502), in which the writers of the Athletics section refer to the car as the "Ramblin' Reck". However, references to [Dean Floyd Field's car](https://smartech.gatech.edu/handle/1853/25251), the [Georgia Tech football team](https://smartech.gatech.edu/handle/1853/26077), and the [Tech student body](https://smartech.gatech.edu/handle/1853/26066) in the Technique that predate the mascot use both spellings interchangeably.
 
-The historic use of both terms has created a lot of confusion amongst students and fans, and the Institute has further complicated matters by holding a [trademark on "Ramblin' Wreck"](http://www.licensing.gatech.edu/trademarks-101) and discouraging the use of "Ramblin Reck". But the question remains: which name is accurate? Well, it depends on who you ask.
+The historic use of both terms has created a lot of confusion amongst students and fans, and the Institute has further complicated matters by holding a [trademark on "Ramblin' Wreck"](http://www.licensing.gatech.edu/trademarks-101) and discouraging the use of "Ramblin' Reck". But the question remains: which name is accurate? Well, it depends on who you ask.
 
 **The Reck Club stance**: "Wreck" refers to students; "Reck" refers to the car and the club.
 
