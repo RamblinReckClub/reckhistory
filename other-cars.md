@@ -31,7 +31,7 @@ permalink: /other-cars/
     <div class="col-lg-8">
         <div class="row">
             <div class="col-lg-12">
-                <h2>Alumni Association Reck</h2>
+                <h2>Alumni Association Car</h2>
                 <h4>Creation Date: 1988</h4>
                 <h4>Owner: Georgia Tech Alumni Association</h4>
                 <h4>Location: Georgia Tech campus, Atlanta, GA</h4>
@@ -51,7 +51,7 @@ permalink: /other-cars/
     <div class="col-lg-8">
         <div class="row">
             <div class="col-lg-12">
-                <h2>Reck Shell</h2>
+                <h2>1930 Model A Shell</h2>
                 <h4>Creation Date: late 1990s</h4>
                 <h4>Owner: Georgia Institute of Technology</h4>
                 <h4>Location: Georgia Tech Hotel and Convention Center, Atlanta, GA</h4>
